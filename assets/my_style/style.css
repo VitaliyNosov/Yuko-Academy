@@ -17,6 +17,10 @@ header {
   color: #999999;
 }
 
+.navbar-nav li.current-menu-item a {
+  color: red;
+}
+
 .my-primary-color {
   background-color: #F0F0F0;
 }
@@ -93,10 +97,6 @@ header {
   height: 45px;
 }
 
-.active {
-  color: red;
-}
-
 .footer-indigo {
   background-color: #414141;
   padding-top: 45px;
@@ -122,6 +122,10 @@ ul {
   font-size: 18px;
   width: 50px;
   height: 20px;
+}
+
+li.current-menu-item a {
+  color: green;
 }
 
 .menu-menu-2-container ul li a {
@@ -1190,8 +1194,8 @@ strong {
   border-radius: 10px;
   margin-top: 30px;
   background-color: #fff;
-  -webkit-box-shadow: 0 0 10px rgb(0 0 0 / 10%);
-          box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+  -webkit-box-shadow: 0 0 10px rgb 0 0 0 / 10%;
+          box-shadow: 0 0 10px rgb 0 0 0 / 10%;
 }
 
 .home-page-icon-block span {

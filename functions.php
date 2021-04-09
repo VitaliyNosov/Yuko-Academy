@@ -106,16 +106,6 @@ endif;
 add_action( 'after_setup_theme', 'yuko_academy_setup' );
 
 
-// Активный элемент меню
-
-add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
-
-function special_nav_class ($classes, $item) {
-    if (in_array('current-menu-item', $classes) ){
-        $classes[] = 'active ';
-    }
-    return $classes;
-}
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -163,7 +153,6 @@ function yuko_academy_scripts() {
 	wp_enqueue_style( 'mdb', get_template_directory_uri() . '/assets/MDB-Free/css/mdb.min.css' );
 	wp_enqueue_style( 'slick-slider-style', get_template_directory_uri() . '/assets/slick-slider/slick.css' );
 	wp_enqueue_style( 'slick-slider-theme', get_template_directory_uri() . '/assets/slick-slider/slick-theme.css' );
-		
 	wp_style_add_data( 'yuko-academy-style', 'rtl', 'replace' );
 
 	// scripts
@@ -177,20 +166,23 @@ function yuko_academy_scripts() {
 	wp_enqueue_script( 'popper', get_template_directory_uri() . '/assets/MDB-Free/js/popper.min.js' , array(), _S_VERSION, true);
 	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/assets/MDB-Free/js/bootstrap.min.js', array(), _S_VERSION, true);
 	wp_enqueue_script( 'mdb', get_template_directory_uri() . '/assets/MDB-Free/js/mdb.min.js', array(), _S_VERSION, true); 
+	wp_enqueue_script( 'fontawesome-script', get_template_directory_uri() . '/assets/fontawesome-5/fontawesome.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'common-script', get_template_directory_uri() . '/js/common.js', array(), _S_VERSION, true );
-
+	
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'yuko_academy_scripts' );
 
-// font-awesome 
+// font-awesome  cdn
 
-add_action( 'wp_enqueue_scripts', 'enqueue_load_fa' );
-function enqueue_load_fa() {
-wp_enqueue_style( 'load-fa', 'https://use.fontawesome.com/releases/v5.11.2/css/all.css' );
-}
+// add_action( 'wp_enqueue_scripts', 'enqueue_load_fa' );
+// function enqueue_load_fa() {
+// wp_enqueue_style( 'load-fa', 'https://use.fontawesome.com/releases/v5.11.2/css/all.css' );
+// }
+
+
 
 // font circe
 
@@ -422,13 +414,36 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
-// Шорт код
+// Шаблоны слайдеров шорткод
 
-require_once( dirname(__FILE__) . '/template-chortcode/about-slider.php');
+require_once( dirname(__FILE__) . '/template-chortcode/about-company-sliders.php');
+require_once( dirname(__FILE__) . '/template-chortcode/home-page-slider.php');
 
-// function slider_one(){
-// 	return "Даешь рок";
-// }
-// add_shortcode('slider', 'slider_one');
+// Активный класс меню
+
+// Хидер
+
+add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
+
+function special_nav_class ($classes, $item) {
+  if (in_array('current-menu-item', $classes) ){
+    $classes[] = 'active ';
+  }
+  return $classes;
+}
+
+// Футер
+
+add_filter('nav_menu_css_class_two' , 'special_nav_class' , 10 , 2);
+
+function special_nav_class_two ($classes, $item) {
+  if (in_array('current-menu-item', $classes) ){
+    $classes[] = 'active ';
+  }
+  return $classes;
+}
+
+
+
 
 

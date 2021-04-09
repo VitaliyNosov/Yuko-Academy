@@ -86,48 +86,15 @@ get_header();
 
     <!-- slider block  -->
 
-    <div class="container-slider">
-        <div class="slider">
-            <div class="slide">
-                <img src="http://academy.testing.in.net/wp-content/uploads/2021/04/Rectangle-20.png" alt="#">
-            </div>
-            <div class="slide">
-                <img src="http://academy.testing.in.net/wp-content/uploads/2021/04/Rectangle-18.png" alt="#">
-            </div>
-            <div class="slide">
-                <img src="http://academy.testing.in.net/wp-content/uploads/2021/04/Rectangle-19.png" alt="#">
-            </div>
-            <div class="slide">
-                <img src="http://academy.testing.in.net/wp-content/uploads/2021/04/Rectangle-20.png" alt="#">
-            </div>
-            <div class="slide">
-                <img src="http://academy.testing.in.net/wp-content/uploads/2021/04/Rectangle-18.png" alt="#">
-            </div>
-            <div class="slide">
-                <img src="http://academy.testing.in.net/wp-content/uploads/2021/04/Rectangle-19.png" alt="#">
-            </div>          
-        </div>
-    </div>
+        <div class="container-slider">
 
-    <!-- <div class="slider-one">
-    
-        <div class="slider-content">
-            <img src="http://localhost/yuko-academy/wp-content/uploads/2021/04/Rectangle-20-1.png" alt="#">
+            <!-- about slider one chortcode -->
+
+            <?php echo do_shortcode( '[about-slider-one]' ); ?> 
+
+            <!-- about slider one chortcode -->
+
         </div>
-        <div class="slider-content">
-            <img src="http://localhost/yuko-academy/wp-content/uploads/2021/04/Rectangle-18.png" alt="#">
-        </div>
-        <div class="slider-content">
-            <img src="http://localhost/yuko-academy/wp-content/uploads/2021/04/Rectangle-19.png" alt="#">
-        </div>
-        <div class="slider-content">
-            <img src="http://localhost/yuko-academy/wp-content/uploads/2021/04/Rectangle-20-1.png" alt="#">
-        </div>
-        <div class="slider-content">
-            <img src="http://localhost/yuko-academy/wp-content/uploads/2021/04/Rectangle-19.png" alt="#">
-        </div>
-    
-    </div> -->
 
     <!-- logo and certificate block -->
 
@@ -169,27 +136,14 @@ get_header();
                 <div class="certificate-block-slider">
                 
                 <div class="container-slider-two">
-                    <div class="slider-two">
-                        <div class="slide-two">
-                            <img src="http://academy.testing.in.net/wp-content/uploads/2021/04/Rectangle-40-1.png" alt="#">
-                        </div>
-                        <div class="slide-two">
-                            <img src="http://academy.testing.in.net/wp-content/uploads/2021/04/Rectangle-41-1.png" alt="#">
-                        </div>
-                        <div class="slide-two">
-                            <img src="http://academy.testing.in.net/wp-content/uploads/2021/04/Rectangle-42-1.png" alt="#">
-                        </div>
-                        <div class="slide-two">
-                            <img src="http://academy.testing.in.net/wp-content/uploads/2021/04/Rectangle-40-1.png" alt="#">
-                        </div>
-                        <div class="slide-two">
-                            <img src="http://academy.testing.in.net/wp-content/uploads/2021/04/Rectangle-41-1.png" alt="#">
-                        </div>
-                        <div class="slide-two">
-                            <img src="http://academy.testing.in.net/wp-content/uploads/2021/04/Rectangle-42-1.png" alt="#">
-                        </div>
-               </div>
-            </div>
+
+                    <!-- about slider two chortcode -->
+
+                    <?php echo do_shortcode( '[about-slider-two]' ); ?> 
+
+                    <!-- about slider two chortcode -->
+        
+                </div>
                     
                     </div>
                 

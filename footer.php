@@ -34,15 +34,16 @@
 
 		<ul>
 		          
-		  <?php
+    <?php
 			wp_nav_menu(
 				array(
 					'theme_location' => 'menu-2',
 					'menu_id'        => 'primary-menu',
-					'menu_class' => 'nav-item custom-nav-link nav-custom active',
+					'menu_class' => 'nav-item custom-nav-link nav-custom',
 				)
 			);
 		?>
+
 		</ul>
 		<!-- <ul class="">	
             <li class="nav-item">
