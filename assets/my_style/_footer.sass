@@ -4,7 +4,9 @@
             width: 220px
             height: 45px
 
-    
+hr 
+    border-top: 1px solid  #3D3D3D !important
+
 .footer-indigo 
     background-color: #414141
     padding-top: 45px
@@ -21,26 +23,21 @@ ul
 
 .nav-custom 
     padding-top: 25px
+    padding-bottom: 35px !important
     a 
-        // margin-right: 74px
         font-size: 18px
         width: 50px
         height: 20px
-        // border: 1px solid green
 
-// Подсвечивания активного пункта меню
-
-li.current-menu-item a 
-		color: green
-
-// Подсвечивания активного пункта меню
+// активный пункт меню
 
 .menu-menu-2-container 
     ul 
-        li 
+        li.current-menu-item 
             a 
-                color: #E6E7E7 !important 
+                color: #A1A1A1
 
+// активный пункт меню
 
 .menu-navigation 
     margin-top: 5px
@@ -66,19 +63,19 @@ li.current-menu-item a
         display: flex
         justify-content: space-between 
         li 
-            min-width: 10%
+            // min-width: 10%
             height: 100%
             a 
                 font-size: 16px
+
+
         
 
 .social-block 
     width: 100%
     margin-top: 8%
-    // margin-left: 20px
     display: flex
     justify-content: flex-start
-    // border: 1px solid red
     a 
         margin-left: 17px
     ul 
@@ -145,12 +142,12 @@ li.current-menu-item a
     display: flex
 
 .footer-map-site
-    margin-right: 3px
+    margin-right: 6px
 
 .footer-policy-conditality 
     &::before
         content: '|'
-        margin-right: 3px
+        margin-right: 6px
 
 
 @media (max-width: 1200px)
@@ -175,6 +172,19 @@ li.current-menu-item a
         // border: 1px solid red
         p
             font-size: 16px
+
+    .menu-menu-2-container
+        width: 100%
+        display: flex
+        justify-content: space-between 
+        ul
+            display: flex
+            justify-content: center 
+            li 
+                // min-width: 10%
+                height: 100%
+                a 
+                    font-size: 12px
   
 @media (max-width: 992px)
     .footer-info-block
@@ -240,11 +250,10 @@ li.current-menu-item a
     .custom-nav-link 
         padding: 20px 40px 20px 70px
 
-    .logo-block
-        width: 100%
+
+    .footer-logo 
         display: flex
         justify-content: center
-        margin-bottom: 50px
 
     .social-block 
         width: 100%

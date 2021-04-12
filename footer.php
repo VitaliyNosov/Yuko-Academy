@@ -21,10 +21,10 @@
 
         <div class=" col-lg-3 col-md-12">
           <div class="footer-logo">
-		  	<!-- <img src="footer-logo.PNG" alt="#"> -->
-			  <!-- <img src="http://academy.testing.in.net/wp-content/uploads/2021/03/footer-logo.png" alt="#"> -->
-        <?php the_custom_logo(); ?>
-		  </div>
+		  	  <!-- <img src="footer-logo.PNG" alt="#"> -->
+			    <!-- <img src="http://academy.testing.in.net/wp-content/uploads/2021/03/footer-logo.png" alt="#"> -->
+          <?php the_custom_logo(); ?>
+		    </div>
         </div>
 
       <div class="col-lg-9 col-md-12 col-sm-12">
@@ -153,7 +153,7 @@
   <!-- Copyright -->
   <div class="container">
     <div class="footer-info-block">
-      <p>© 2002-2021 СП Юкоил. Завад технических масел</p>
+      <p>© 2002-2021 СП Юкоил. Завод технических масел</p>
       <div class="footer-map">
         <p class="footer-map-site">Карта сайта</p>
         <p class="footer-policy-conditality">Политика конфедициальности</p>

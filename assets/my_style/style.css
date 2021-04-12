@@ -10,15 +10,15 @@ header {
 .navbar-nav li a {
   color: #333333;
   margin-right: 5px;
-  margin-left: 10px;
+  margin-left: 15px;
 }
 
 .navbar-nav li a:hover {
   color: #999999;
 }
 
-.navbar-nav li.current-menu-item a {
-  color: red;
+li.current-menu-item a {
+  color: #888888;
 }
 
 .my-primary-color {
@@ -97,6 +97,10 @@ header {
   height: 45px;
 }
 
+hr {
+  border-top: 1px solid  #3D3D3D !important;
+}
+
 .footer-indigo {
   background-color: #414141;
   padding-top: 45px;
@@ -116,6 +120,7 @@ ul {
 
 .nav-custom {
   padding-top: 25px;
+  padding-bottom: 35px !important;
 }
 
 .nav-custom a {
@@ -124,12 +129,8 @@ ul {
   height: 20px;
 }
 
-li.current-menu-item a {
-  color: green;
-}
-
-.menu-menu-2-container ul li a {
-  color: #E6E7E7 !important;
+.menu-menu-2-container ul li.current-menu-item a {
+  color: #A1A1A1;
 }
 
 .menu-navigation {
@@ -179,7 +180,6 @@ li.current-menu-item a {
 }
 
 .menu-menu-2-container ul li {
-  min-width: 10%;
   height: 100%;
 }
 
@@ -307,12 +307,12 @@ li.current-menu-item a {
 }
 
 .footer-map-site {
-  margin-right: 3px;
+  margin-right: 6px;
 }
 
 .footer-policy-conditality::before {
   content: '|';
-  margin-right: 3px;
+  margin-right: 6px;
 }
 
 @media (max-width: 1200px) {
@@ -334,6 +334,29 @@ li.current-menu-item a {
   }
   .content-block-info p {
     font-size: 16px;
+  }
+  .menu-menu-2-container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .menu-menu-2-container ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .menu-menu-2-container ul li {
+    height: 100%;
+  }
+  .menu-menu-2-container ul li a {
+    font-size: 12px;
   }
 }
 
@@ -440,15 +463,13 @@ li.current-menu-item a {
   .custom-nav-link {
     padding: 20px 40px 20px 70px;
   }
-  .logo-block {
-    width: 100%;
+  .footer-logo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-bottom: 50px;
   }
   .social-block {
     width: 100%;
