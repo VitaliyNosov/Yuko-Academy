@@ -23,6 +23,9 @@
 <header>
 		<div class="container">
 
+		<!-- basicExampleNav -->
+
+
 	<!--Navbar-->
 
 		<nav class="navbar navbar-expand-lg navbar-dark my-primary-color">
@@ -30,13 +33,13 @@
 		  		<?php the_custom_logo(); ?>
 		  </div>
 		<!-- Collapse button -->
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
-		  aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#YukoNavigation"
+		  aria-controls="YukoNavigation" aria-expanded="false" aria-label="Toggle navigation">
 		  <span class="navbar-toggler-icons"><i class="fas fa-align-justify"></i></span>
 		</button>
 	  
 		<!-- Collapsible content -->
-		<div class="collapse navbar-collapse" id="basicExampleNav">
+		<div class="collapse navbar-collapse" id="YukoNavigation">
 
 		<?php
 			wp_nav_menu(

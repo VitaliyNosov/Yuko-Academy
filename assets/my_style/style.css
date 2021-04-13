@@ -198,10 +198,6 @@ ul {
           justify-content: flex-start;
 }
 
-.social-block a {
-  margin-left: 17px;
-}
-
 .social-block ul {
   margin: 0px;
 }
@@ -209,6 +205,7 @@ ul {
 .social-block i {
   font-size: 22px;
   color: #FAFFFF;
+  margin: 0px 25px 0px 25px;
 }
 
 .social-block i:hover {
@@ -575,7 +572,7 @@ ul {
   min-width: 30px;
   position: absolute;
   font-size: 12px;
-  font-weight: bold;
+  text-transform: uppercase;
   color: #8B8B8B;
   z-index: 20;
   left: 5%;
@@ -594,7 +591,6 @@ ul {
 
 .inputs-cheked {
   width: 100%;
-  height: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -616,11 +612,18 @@ ul {
 .inputs-cheked li {
   list-style: none;
   font-size: 13px;
-  margin-bottom: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .inputs-cheked label {
   margin-left: 5px;
+  margin-top: 5px;
+  text-transform: lowercase !important;
 }
 
 .button-form {
@@ -713,6 +716,7 @@ ul {
 
 .modal-title {
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .authorization-info {
@@ -744,18 +748,23 @@ ul {
   margin-top: 36px;
 }
 
+label {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
 .button-authorization {
   width: 125px;
   height: 50px;
   border: none;
-  color: #fff;
-  background-color: #ED1D24;
+  color: #fff !important;
+  background-color: #ED1D24 !important;
   margin-top: 36px;
   margin-bottom: 26px;
 }
 
 .button-authorization:hover {
-  background-color: #C9181E;
+  background-color: #C9181E !important;
   cursor: pointer;
 }
 
@@ -999,6 +1008,8 @@ strong {
 
 .inputs-block .inputs label {
   background-color: #F0F0F0 !important;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .inputs-block .inputs input {
@@ -1023,6 +1034,7 @@ strong {
   position: absolute;
   top: -10%;
   left: 3%;
+  font-weight: bold;
 }
 
 .inputs-textarea textarea {
@@ -1123,6 +1135,14 @@ strong {
   }
   .contact-map-block {
     margin-top: 60px;
+  }
+  .contact-block-info span {
+    color: #000;
+    text-transform: none !important;
+  }
+  .contact-form-block-info span {
+    color: #000;
+    text-transform: none !important;
   }
 }
 
@@ -1271,9 +1291,16 @@ strong {
   .home-page-info-icon-block {
     margin-bottom: 80px;
   }
+  .home-page-info-text span {
+    color: #000;
+  }
 }
 
 body {
   background: #7D9CAB;
+}
+
+.content-yuko-academy {
+  min-height: 85vh;
 }
 /*# sourceMappingURL=style.css.map */

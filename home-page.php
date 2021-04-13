@@ -7,6 +7,8 @@ Template Name: home-page
 get_header();
 ?>
 
+<main class="content-yuko-academy">
+
 
 <!-- home page slider -->
 
@@ -95,7 +97,7 @@ get_header();
 	
 	</div>
 	
-
+</main>
 
 <?php
 get_footer();

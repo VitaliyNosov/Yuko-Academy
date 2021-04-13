@@ -385,13 +385,6 @@ function wplb_ajax_request() {
 
 
 /**
- * Регистрация нового пользователя
- */
-
-
-
-
-/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';
@@ -418,14 +411,12 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
-// Шаблоны слайдеров шорткод
+// Шаблоны слайдеров, шорткод
 
 require_once( dirname(__FILE__) . '/template-chortcode/about-company-sliders.php');
 require_once( dirname(__FILE__) . '/template-chortcode/home-page-slider.php');
 
 // Активный класс меню
-
-// Хидер
 
 add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
 
@@ -435,18 +426,6 @@ function special_nav_class ($classes, $item) {
   }
   return $classes;
 }
-
-// Футер
-
-add_filter('nav_menu_css_class' , 'special_nav_class_two' , 10 , 2);
-
-function special_nav_class_two ($classes, $item) {
-  if (in_array('current-menu-item', $classes) ){
-    $classes[] = 'active ';
-  }
-  return $classes;
-}
-
 
 
 

@@ -7,6 +7,10 @@ Template Name: about-company
 get_header();
 ?>
 
+<main class="content-yuko-academy">
+
+
+
 <div class="container">
 
     <!-- name block -->
@@ -284,28 +288,28 @@ get_header();
 
                     <div class="inputs-block">
                         <div class="inputs">
-                        <label for="name">ФИО</label>
+                        <label for="name">Фио</label>
                         <input type="text" placeholder="Имя Отчество Фамилия" required>        
                     </div>
                     <div class="inputs">
-                        <label for="name">ПРЕДПРИЯТИЕ</label>
+                        <label for="name">Предприятие</label>
                         <input type="text" placeholder="Название Предприятия" required>        
                     </div>
                     </div>
 
                     <div class="inputs-block">
                         <div class="inputs">
-                        <label for="name">ТEЛЕФОН</label>
+                        <label for="name">Телефон</label>
                         <input type="text" placeholder="Название телефона в международном формате">        
                     </div>
                     <div class="inputs">
-                        <label for="name">E-MAIL</label>
+                        <label for="name">E-mail</label>
                         <input type="text" placeholder="Адрес электронной почты" required>        
                     </div>
                     </div>
 
                     <div class="inputs inputs-textarea">
-                        <label for="name">СООБЩЕНИЕ</label>
+                        <label for="name">Сообщение</label>
                         <textarea type="text" rows="2" cols="84" placeholder="Опишите суть сообщения"></textarea>        
                     </div>
 
@@ -326,6 +330,9 @@ get_header();
     </div>
 
 
+    
+
+</main>
 
 
 <?php
